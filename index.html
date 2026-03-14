@@ -15,6 +15,7 @@
     <style>
         :root {
             --color-primary: #5c3b42;
+            --color-secondary: #3F5F23;
         }
 
         body {
@@ -51,7 +52,8 @@
             color: var(--color-primary);
         }
 
-        section>h1::before, section>h1::after {
+        section>h1::before,
+        section>h1::after {
             content: "";
             display: inline-block;
             width: 40px;
@@ -111,6 +113,10 @@
             background: linear-gradient(135deg, #25D366, #128C7E);
         }
 
+        .mailchimp {
+            background: linear-gradient(135deg, #ffdc00, #ff6f61);
+        }
+
         .instagram {
             background: linear-gradient(135deg, #f58529, #dd2a7b, #8134af, #515bd4);
         }
@@ -166,9 +172,9 @@
                 <h1>Welcome</h1>
                 <p> Hello! My name is Dallas. I am just a Christian trying to follow Jesus wherever He may lead me.
                     I believe this next season of my life He is leading me to serve foster and orphan children in
-                    Ukraine. You can read the full story below.</p>
-                <p>I will be living off of donations and support so please pray for me and if you feel lead to
-                    support me, you can donate below. I also have links to my social media and other chats where you
+                    Ukraine. You can <a class="color-secondary" href="#story">read the full story</a> below.</p>
+                <p>I will be living off of donations and financial support so please pray for me and if you feel lead to
+                    give, you can <a class="color-secondary" href="#donate">donate</a> below. I also have <a class="color-secondary" href="#follow">links</a> to my social media and other chats where you
                     can stay up-to-date on the work.</p>
             </div>
         </section>
@@ -190,7 +196,7 @@
                     allowTransparency="true"></iframe></div>
         </section>
         <section class="my-5 links" id="follow">
-            <h1>Follow</h1>
+            <h1>Stay Connected</h1>
             <div class="row g-3 justify-content-center">
 
                 <div class="col-12 col-md-6">
@@ -198,8 +204,19 @@
                         target="_blank">
                         <div class="icon"><i class="fab fa-whatsapp"></i></div>
                         <div class="text">
-                            <h5 class="mt-2">WhatsApp</h5>
+                            <h5 class="mt-2">Prayer</h5>
                             <p>Join my prayer team and get updates via WhatsApp</p>
+                        </div>
+                    </a>
+                </div>
+
+                <div class="col-12 col-md-6">
+                    <a href="https://mailchi.mp/76903d9fac3b/alylsd0bn1" class="link-box mailchimp"
+                        target="_blank">
+                        <div class="icon"><i class="fab fa-mailchimp"></i></div>
+                        <div class="text">
+                            <h5 class="mt-2">Newsletter</h5>
+                            <p>Join my mailing list and get updates via email</p>
                         </div>
                     </a>
                 </div>
