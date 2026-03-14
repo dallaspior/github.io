@@ -13,6 +13,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <style>
+        :root {
+            --color-primary: #5c3b42;
+        }
+
         body {
             margin: 0;
             background-color: #D9DDDC;
@@ -21,10 +25,40 @@
             /* Prevent content from hiding behind navbar */
         }
 
+        /* *** BootStrap Image override *** */
+        /* Default image behavior */
+        img#intro-image {
+            width: 100%;
+            height: auto;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.25), 0 2px 4px rgba(0, 0, 0, 0.15);
+        }
+
+        /* When Bootstrap md breakpoint is reached */
+        @media (max-width: 768px) {
+            img#intro-image {
+                width: 50%;
+                height: 50vh;
+                border-radius: 50% !important;
+                object-fit: cover;
+                border: 3px solid white;
+                margin-bottom: 20px;
+            }
+        }
+
         section h1 {
             font-style: italic;
             text-align: center;
-            color: #5c3b42;
+            color: var(--color-primary);
+        }
+
+        section>h1::before, section>h1::after {
+            content: "";
+            display: inline-block;
+            width: 40px;
+            height: 2px;
+            background: var(--color-primary);
+            vertical-align: middle;
+            margin: 0 10px;
         }
 
         .link-box {
@@ -125,7 +159,7 @@
         <section class="my-5 row align-items-center welcome" id="welcome">
             <!-- Picture -->
             <div class="col-md-4 text-center">
-                <img src="./Dallas.jpg" class="img-fluid rounded" alt="My Picture">
+                <img id="intro-image" src="./Dallas.jpg" class="img-fluid rounded" alt="My Picture">
             </div>
             <!-- Intro Paragraph -->
             <div class="col-md-8">
