@@ -111,6 +111,14 @@
         }
 
         /* Gradient backgrounds */
+        .venmo {
+            background: linear-gradient(135deg, #3D95CE, #008CFF, #0066FF);
+        }
+
+        .cashapp {
+            background: linear-gradient(135deg, #00d64f, #00c244);
+        }
+
         .whatsapp {
             background: linear-gradient(135deg, #25D366, #128C7E);
         }
@@ -135,7 +143,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- FontAwesome -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">-->
+
+    <!-- Personal Font Awesome Kit JS -->
+    <script src="https://kit.fontawesome.com/504d12fcf4.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -197,13 +208,35 @@
         </section>
         <section class="my-5 row align-items-center donate" id="donate">
             <h1>Donate</h1>
-            <div style="position:relative;overflow:hidden;height:630px;width:100%;"><iframe
-                    title='Donation form powered by Zeffy'
-                    style='position: absolute; border: 0; top:0;left:0;bottom:0;right:0;width:100%;height:100%'
-                    src='https://www.zeffy.com/embed/donation-form/support-dallas-piorkowski' allowpaymentrequest
-                    allowTransparency="true"></iframe></div>
-            <div class="form-text text-center">Donations submitted through the form above are eligible for tax
-                deduction.</div>
+            <div class="row">
+                <div style="position:relative;overflow:hidden;height:630px;width:100%;"><iframe
+                        title='Donation form powered by Zeffy'
+                        style='position: absolute; border: 0; top:0;left:0;bottom:0;right:0;width:100%;height:100%'
+                        src='https://www.zeffy.com/embed/donation-form/support-dallas-piorkowski' allowpaymentrequest
+                        allowTransparency="true"></iframe></div>
+                <div class="form-text text-center">Only donations submitted through the form above are eligible for tax
+                    deduction.</div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-md-6">
+                    <a href="https://www.venmo.com/u/dallaspiorkowski" class="link-box venmo" target="_blank">
+                        <div class="icon"><i class="fa-brands fa-venmo-v"></i></div>
+                        <div class="text">
+                            <h5 class="mt-2">Venmo</h5>
+                            <p>One-Time gift with Venmo</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-12 col-md-6">
+                    <a href="https://cash.app/$DallasPiorkowski" class="link-box cashapp" target="_blank">
+                        <div class="icon"><i class="fa-brands fa-cash-app"></i></div>
+                        <div class="text">
+                            <h5 class="mt-2">Cash App</h5>
+                            <p>One-Time gift with Cash App</p>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </section>
         <section class="my-5 links" id="connect">
             <h1>Stay Connected</h1>
